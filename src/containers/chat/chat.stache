@@ -1,0 +1,30 @@
+<can-import from="./chat.less"/>
+<can-import from="ccsr/components/chat-input-form/"/>
+<can-import from="ccsr/components/message-entry/"/>
+
+{{#unless messagesPromise.isResolved}}
+
+    <!-- Ellipses generated and animated in CSS -->
+    <div class="loading-container">
+        <div class="loading">Loading</div>
+    </div>
+
+{{else}}
+
+    <ccsr-chat-input-form/>
+
+    <div class="messages-container" id="fix-me">
+        {{#if messages}}
+            {{#each messages}}
+                <ccsr-message-entry
+                        {(messagesEditing)}="messagesEditing"
+                        {(message)}="."/>
+            {{/each}}
+        {{else}}
+            <div class="list-group-item">
+                <h4 class="list-group-item-heading">No messages</h4>
+            </div>
+        {{/if}}
+    </div>
+
+{{/unless}}

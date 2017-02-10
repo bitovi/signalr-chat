@@ -1,0 +1,6 @@
+<can-import from="./message-edit.less"/>
+
+<input type="text"
+       ($blur)="updateMessage(%element)"
+       ($keyup)="enterUpdateMessage(%element, %event)"
+       {$value}="message.message"/>

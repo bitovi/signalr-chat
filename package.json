@@ -1,0 +1,42 @@
+{
+  "name": "ccsr",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "system": {
+    "main": "app",
+    "directories": {
+      "lib": "src"
+    },
+    "npmAlgorithm": "flat",
+    "plugins": [
+      "steal-less"
+    ]
+  },
+  "keywords": [],
+  "author": "Joe Crick <joe@josephcrick.com> (http://josephcrick.com)",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "can": "^3.1.0",
+    "can-component": "^3.0.2",
+    "can-connect": "^1.0.12",
+    "can-connect-signalr": "file:/Users/joecrick/WebstormProjects/can-connect-signalr",
+    "can-define": "^1.0.4",
+    "can-define-stream": "^0.0.6",
+    "can-stream": "^0.0.5",
+    "can-util": "^3.0.13",
+    "jquery": "^3.1.1",
+    "js-htmlencode": "^0.2.0",
+    "ms-signalr-client": "^2.2.5",
+    "steal-stache": "^3.0.1",
+    "title-case": "^2.1.0"
+  },
+  "devDependencies": {
+    "steal": "^1.1.0",
+    "steal-less": "^1.1.0",
+    "steal-tools": "^1.1.1"
+  }
+}

@@ -1,0 +1,12 @@
+<can-import from="./dropdown.less"/>
+
+<div tabindex="0" class="onclick-menu">
+    <ul class="onclick-menu-content">
+        <li>
+            <button ($click)="editMessage()">Edit</button>
+        </li>
+        <li>
+            <button ($click)="deleteMessage()">Delete</button>
+        </li>
+    </ul>
+</div>

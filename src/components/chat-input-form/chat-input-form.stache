@@ -1,0 +1,28 @@
+<can-import from="./chat-input-form.less"/>
+<can-import from="ccsr/components/inline-alert/"/>
+
+<form class="row chat-form" ($submit)="addMessage(%event)">
+    <div class="form-group row chat-name-container">
+        <div class="col-sm-3">
+            <label for="example-text-input" class="col-2 col-form-label">Chat Name
+                <input type="text" class="form-control" placeholder="Your name"
+                       {($value)}="messageName"/>
+            </label>
+        </div>
+    </div>
+    <div class="col-sm-10">
+        <input type="text"
+               class="form-control"
+               placeholder="Your message"
+               {($value)}="messageBody"/>
+    </div>
+    <div class="col-sm-2">
+        <input type="submit" class="btn btn-primary btn-block" value="Send"/>
+    </div>
+</form>
+{{#if showRequireInputs}}
+    <ccsr-inline-alert
+            {alertLevel}="'danger'"
+            {alertMessage}="'Please fill in all fields before sending your message.'"
+    />
+{{/if}}

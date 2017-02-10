@@ -1,0 +1,5 @@
+<can-import from="./inline-alert.less"/>
+
+<div class="alert-container">
+    <span class="badge badge-{{alertLevel}}">{{showAlertLevel()}}</span> {{alertMessage}}
+</div>

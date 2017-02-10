@@ -1,0 +1,23 @@
+<can-import from="ccsr/components/message-edit/"/>
+<can-import from="ccsr/components/dropdown/"/>
+<can-import from="./message-entry.less"/>
+
+
+<div class="list-group-item">
+    <div class="pull-left">
+        <h4 class="list-group-item-heading">{{name}}</h4>
+        {{#if isEditing}}
+            <ccsr-message-edit
+                    {(messagesEditing)}="messagesEditing"
+                    {(message)}="message"  />
+        {{else}}
+            <p class="list-group-item-text">{{{body}}}</p>
+        {{/if}}
+    </div>
+    <div class="item-menu pull-right">
+        <ccsr-dropdown
+                {^messagesEditing}="messagesEditing"
+                {(message)}="message"/>
+    </div>
+    <div class="clearfix"></div>
+</div>

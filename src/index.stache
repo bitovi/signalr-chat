@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <can-import from="bootstrap/less/bootstrap.less"/>
+        <can-import from="ccsr/styles.less"/>
+        <can-import from="ccsr/containers/chat/"/>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    {{#if isPending}}
+                        Loading...
+                    {{else}}
+                        <ccsr-chat></ccsr-chat>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
