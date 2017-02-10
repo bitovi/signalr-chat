@@ -1,10 +1,4 @@
-@page can-connect-signalr-test-app can-connect-signalr-test-app
-@group can-connect-signalr-test-app.components Components
-@group can-connect-signalr-test-app.clientModels Client Models
-@group can-connect-signalr-test-app.services Services
-@group can-connect-signalr-test-app.serviceModels Service Models
-
-[![Build Status](https://travis-ci.org/donejs/can-connect-signalr-test-app.svg?branch=master)](https://travis-ci.org/donejs/can-connect-signalr-test-app)
+# Can Connect SignalR Test App
 
 `can-connect-signalr-test-app` is a [CanJS](https://canjs.com) chat app that demonstrates how you can use
 `can-connect-signalr` in an application. The application is somewhat Slack like:
