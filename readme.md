@@ -82,9 +82,9 @@ http-server
 By default, `http-server` listens for requests on port `8080`. Navigate to `localhost:8080` in your browser. 
 The application should load!
 
-#### Exploring Distrubuted Messaging
+#### Exploring Real-time Messaging
 
-To see signalR's distributed messaging in action, open up two copies of the application in different browsers (e.g., 
+To see signalR's real-time messaging in action, open up two copies of the application in different browsers (e.g., 
 Chrome and Firefox). Place them side-by-side. Any CRUD action you take on a message in one browser will be automatically
 updated in the other.
 

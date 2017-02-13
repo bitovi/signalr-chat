@@ -23,8 +23,8 @@ let Message = DefineMap.extend({
 });
 
 Message.List = DefineList.extend({
-	Map: Message
-}, {});
+	'#': Message
+});
 
 
 const behaviors = [
