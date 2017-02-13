@@ -88,7 +88,7 @@ To see signalR's real-time messaging in action, open up two copies of the applic
 Chrome and Firefox). Place them side-by-side. Any CRUD action you take on a message in one browser will be automatically
 updated in the other.
 
-![SideBySideApplication](https://raw.githubusercontent.com/joe-crick/can-connect-signalr-test-app/master/src/static/images/side-by-side.gif)
+![SideBySideApplication](https://raw.githubusercontent.com/joe-crick/can-connect-signalr-test-app/docs/side-by-side.gif)
 
 ### Enjoy
 
