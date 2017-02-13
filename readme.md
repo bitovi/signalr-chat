@@ -1,4 +1,4 @@
-# Can Connect SignalR Test App
+# Can Connect SignalR Test App (Client)
 
 `can-connect-signalr-test-app` is a [CanJS](https://canjs.com) chat app that demonstrates how you can use
 `can-connect-signalr` in an application. The application is somewhat Slack like:
