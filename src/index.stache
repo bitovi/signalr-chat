@@ -1,11 +1,11 @@
 <can-import from="bootstrap/less/bootstrap.less"/>
 <can-import from="ccsr/styles.less"/>
-<can-import from="ccsr/components/chat/"/>
+<can-import from="ccsr/components/chat-messages/"/>
 
 <div class="container">
     <div class="row">
         <div class="col-sm-8 col-sm-offset-2">
-            <ccsr-chat/>
+            <ccsr-chat-messages/>
         </div>
     </div>
 </div>

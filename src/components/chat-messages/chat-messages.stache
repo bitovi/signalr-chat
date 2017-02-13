@@ -1,4 +1,4 @@
-<can-import from="./chat.less"/>
+<can-import from="./chat-messages.less"/>
 <can-import from="ccsr/components/chat-input-form/"/>
 <can-import from="ccsr/components/message-entry/"/>
 

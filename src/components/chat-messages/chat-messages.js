@@ -1,6 +1,6 @@
 import Component  from 'can-component';
 import DefineMap  from 'can-define/map/';
-import template from './chat.stache!steal-stache';
+import template from './chat-messages.stache!steal-stache';
 import Message from 'ccsr/models/message';
 import 'can-define-stream';
 import {KEY_ARROW_UP, KEY_ESCAPE} from 'ccsr/utils/event-constants';
@@ -55,7 +55,7 @@ export const ViewModel = DefineMap.extend({
 });
 
 export default Component.extend({
-	tag: 'ccsr-chat',
+	tag: 'ccsr-chat-messages',
 	viewModel: ViewModel,
 	template,
 	events: {
