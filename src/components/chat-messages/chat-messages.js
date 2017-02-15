@@ -13,6 +13,11 @@ export const ViewModel = DefineMap.extend({
 			});
 		}
 	},
+  messagesPromise: {
+    value: function () {
+      return Message.getList();
+    }
+  },
 	messageCount: {
 		get() {
 			return this.messages
@@ -26,11 +31,6 @@ export const ViewModel = DefineMap.extend({
 			return this.stream(".messageCount").scan(last => {
 				return last + 1;
 			}, 0)
-		}
-	},
-	messagesPromise: {
-		value: function () {
-			return Message.getList();
 		}
 	},
 	/**

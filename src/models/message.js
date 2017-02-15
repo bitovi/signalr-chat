@@ -10,7 +10,7 @@ import signalR  from 'can-connect-signalr';
 import DefineMap  from 'can-define/map/';
 import DefineList  from 'can-define/list/';
 
-let Message = DefineMap.extend({
+const Message = DefineMap.extend({
 		name: {
 			type: "string"
 		},
