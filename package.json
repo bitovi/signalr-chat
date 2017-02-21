@@ -29,7 +29,7 @@
     "can-stream": "^0.0.5",
     "can-util": "^3.0.13",
     "jquery": "^3.1.1",
-    "js-htmlencode": "^0.2.0",
+    "js-htmlencode": "^0.3.0",
     "ms-signalr-client": "^2.2.5",
     "steal-stache": "^3.0.1",
     "title-case": "^2.1.0"

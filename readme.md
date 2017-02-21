@@ -18,6 +18,8 @@ follow the steps outlined below:
 
 ### Setup Environment
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/joe-crick/can-connect-signalr-test-app.svg)](https://greenkeeper.io/)
+
 Make sure you have installed:
 
 - [Node 5](https://nodejs.org/en/download/)
