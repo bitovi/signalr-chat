@@ -23,7 +23,7 @@
     "can": "^3.1.0",
     "can-component": "^3.0.2",
     "can-connect": "^1.0.12",
-    "can-connect-signalr": "file:/Users/joecrick/WebstormProjects/can-connect-signalr",
+    "can-connect-signalr": "0.0.1",
     "can-define": "^1.0.4",
     "can-define-stream": "^0.0.6",
     "can-stream": "^0.0.5",

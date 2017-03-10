@@ -43,7 +43,7 @@ Message.connection = connect(behaviors, {
 	List: Message.List,
 	signalR: {
 		url: 'http://signalrdonejs.azurewebsites.net',
-		name: "Message"
+		name: "MessageHub"
 	}
 });
 
