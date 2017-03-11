@@ -18,6 +18,8 @@ follow the steps outlined below:
 
 ### Setup Environment
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/joe-crick/can-connect-signalr-test-app.svg)](https://greenkeeper.io/)
+
 Make sure you have installed:
 
 - [Node 5](https://nodejs.org/en/download/)
@@ -88,7 +90,7 @@ To see signalR's real-time messaging in action, open up two copies of the applic
 Chrome and Firefox). Place them side-by-side. Any CRUD action you take on a message in one browser will be automatically
 updated in the other.
 
-![SideBySideApplication](https://raw.githubusercontent.com/joe-crick/can-connect-signalr-test-app/docs/side-by-side.gif)
+![Side-by-side Application](https://raw.githubusercontent.com/joe-crick/can-connect-signalr-test-app/master/docs/side-by-side.gif)
 
 ### Enjoy
 

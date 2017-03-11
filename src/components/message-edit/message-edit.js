@@ -4,9 +4,15 @@ import template from './message-edit.stache!steal-stache';
 import {KEY_ENTER} from 'ccsr/utils/event-constants';
 
 export const ViewModel = DefineMap.extend({
+    /**
+	 * @property {Object} message The message
+     */
 	message: {
 		type: '*'
 	},
+    /**
+	 * @property {Object} messagesEditing The message in edit mode.
+     */
 	messagesEditing: {},
 	/**
 	 * @desc Updates a message on pressing enter
@@ -35,6 +41,10 @@ export default Component.extend({
 	viewModel: ViewModel,
 	template,
 	events: {
+        /**
+		 * @desc Places the focus in the input field of the message in edit mode.
+         * @param element
+         */
 		inserted(element) {
 			element.querySelector('input').focus();
 		}
