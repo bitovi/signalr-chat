@@ -11,33 +11,33 @@ import DefineMap from "can-define/map/";
 import DefineList from "can-define/list/";
 
 const Message = DefineMap.extend({
-    name: "string",
-    message: "string",
-    id: "number"
+  name: "string",
+  message: "string",
+  id: "number"
 });
 
 Message.List = DefineList.extend({
-    '#': Message
+  '#': Message
 });
 
 const behaviors = [
-    dataParse,
-    constructor,
-    constructorStore,
-    canMap,
-    dataCallbacks,
-    realTime,
-    constructorCallbacksOnce,
-    signalR
+  dataParse,
+  constructor,
+  constructorStore,
+  canMap,
+  dataCallbacks,
+  realTime,
+  constructorCallbacksOnce,
+  signalR
 ];
 
 Message.connection = connect(behaviors, {
-    Map: Message,
-    List: Message.List,
-    signalR: {
-        url: 'http://signalrdonejs.azurewebsites.net',
-        name: "MessageHub"
-    }
+  Map: Message,
+  List: Message.List,
+  signalR: {
+    url: 'http://signalrdonejs.azurewebsites.net',
+    name: "MessageHub"
+  }
 });
 
 export default Message;
