@@ -5,17 +5,21 @@ import Message from 'ccsr/models/message';
 import {KEY_ENTER} from 'ccsr/utils/event-constants';
 
 export const ViewModel = DefineMap.extend({
-	messageName: {
-		type: 'string'
-	},
-	messageBody: {
-		type: 'string'
-	},
+    /**
+	 * @property {string} messageName The user name associated with a message
+     */
+	messageName:  'string',
+    /**
+	 * @property {string} messageBody The body of the message
+     */
+	messageBody:  'string',
+    /**
+	 * @property {bool} showRequireInputs Determines whether ot nor to show required data input message
+     */
 	showRequireInputs: {
 		type: 'boolean',
 		value: false
 	},
-	// TODO: Why do repeated entries of the same value cause the value of the messageBody field to remain ''?
 	/**
 	 * @desc Adds a message to the list
 	 * @param event

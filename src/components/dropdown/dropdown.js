@@ -3,9 +3,15 @@ import DefineMap  from 'can-define/map/';
 import template from './dropdown.stache!steal-stache';
 
 export const ViewModel = DefineMap.extend({
+    /**
+	 * @property {Object} message The message.
+     */
 	message: {
 		type: '*'
 	},
+    /**
+	 * @property {Object} messagesEditing The message being edited
+     */
 	messagesEditing: {},
 	/**
 	 * @desc Deletes a message
@@ -14,7 +20,7 @@ export const ViewModel = DefineMap.extend({
 		this.message.destroy();
 	},
 	/**
-	 * @desc Edits a message
+	 * @desc Puts a message in edit mode.
 	 */
 	editMessage() {
 		this.messagesEditing = this.message;
