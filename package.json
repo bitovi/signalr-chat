@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node bin/server",
+    "develop": "node bin/server",
+    "run:build": "node bin/build",
+    "build": "run-s clean run:build",
+    "clean": "rimraf build && rimraf dist",
+    "lint": "eslint src test"
   },
   "system": {
     "main": "app",
@@ -26,15 +31,24 @@
     "can-connect-signalr": "0.0.1",
     "can-define": "^1.0.4",
     "can-define-stream": "^0.0.6",
+    "can-stache": "^3.0.20",
     "can-stream": "^0.0.5",
     "can-util": "^3.0.13",
+    "compression": "^1.6.2",
+    "express": "^4.15.2",
+    "express-history-api-fallback": "^2.1.0",
+    "infanticide": "^1.0.1",
     "jquery": "^3.1.1",
     "js-htmlencode": "^0.3.0",
     "ms-signalr-client": "^2.2.5",
+    "nconf": "^0.8.4",
     "steal-stache": "^3.0.1",
     "title-case": "^2.1.0"
   },
   "devDependencies": {
+    "eslint": "^3.17.1",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
     "steal": "^1.1.0",
     "steal-less": "^1.1.0",
     "steal-tools": "^1.1.1"

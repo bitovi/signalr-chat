@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "staticPath": "./",
+  "indexFile": "development.html",
+  "liveReload": true
+}

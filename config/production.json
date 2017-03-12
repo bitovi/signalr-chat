@@ -1,0 +1,6 @@
+{
+  "port": 8080,
+  "staticPath": "./",
+  "indexFile": "production.html",
+  "liveReload": false
+}
