@@ -22,10 +22,10 @@ app
     index: nconf.get('indexFile')
   }));
 
-// Enable push state roouting
+// Enable push state routing
 app.use(fallback(path.join(ROOT, nconf.get('staticPath'), nconf.get('indexFile'))));
 
-// Enable steal-tools live-relaod in development
+// Enable steal-tools live-reload in development
 if(nconf.get('liveReload')) {
   var stealToolsPath = path.join("node_modules", ".bin", "steal-tools");
 		if(!fs.existsSync(stealToolsPath)) {
