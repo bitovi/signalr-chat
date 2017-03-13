@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "start": "set NODE_ENV=production && node bin/server",
+    "start:nix": "NODE_ENV=production node bin/server",
     "develop": "node bin/server",
     "run:build": "node bin/build",
     "build": "run-s clean run:build",
