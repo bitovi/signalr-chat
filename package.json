@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "NODE_ENV=production node bin/server",
+    "start": "set NODE_ENV=production && node bin/server",
     "develop": "node bin/server",
     "run:build": "node bin/build",
     "build": "run-s clean run:build",

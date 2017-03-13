@@ -76,10 +76,7 @@ export default Component.extend({
       messages.messagesPromise.then(() => {
         const messageContainer = document.querySelector('.messages-container');
         context.viewModel.on("messageAdded", () => {
-          // run last
-          setTimeout(function () {
-            messageContainer.scrollTop = messageContainer.scrollHeight
-          });
+          messageContainer.scrollTop = messageContainer.scrollHeight;
         });
       })
     },

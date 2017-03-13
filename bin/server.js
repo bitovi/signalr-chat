@@ -10,7 +10,7 @@ const serveStatic = require('serve-static');
 
 // Load environment-specific config from command line, env and config/*.json files
 nconf.argv().env();
-nconf.file({ file: `./config/${nconf.get('NODE_ENV') || 'default'}.json` });
+nconf.file({ file: `./config/${nconf.get('NODE_ENV').trim() || 'default'}.json`});
 
 const ROOT = process.cwd();
 // Create app that will serve the application
